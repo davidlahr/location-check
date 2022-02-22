@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html"%}
+{% import "bootstrap/wtf.html" as wtf%}
+
+{% block title %}
+<title>Home</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="container">Search Address</h1>
+<div class="container">
+    <form method="POST" class="form" >
+        {{ wtf.quick_form(form) }}
+
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

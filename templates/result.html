@@ -13,19 +13,19 @@
 {% block content %}
 <div class="container">
     <h1 class="heading">Address Results</h1>
-    <table id="data" class="table table-striped header-fixed">
+    <table id="data" class="table table-striped">
 
          <thead>
         <tr>
-            <th>Street Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip Code</th>
-            <th>County</th>
-            <th>Neighborhood</th>
-             <th>UTC Zone</th>
-            <th>Time Zone</th>
-            <th>Local Time</th>
+            <th scope="col">Street Address</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Zip Code</th>
+            <th scope="col">County</th>
+            <th scope="col">Neighborhood</th>
+             <th scope="col">UTC Zone</th>
+            <th scope="col">Time Zone</th>
+            <th scope="col">Local Time</th>
 
 
 
@@ -50,12 +50,11 @@
             {% endfor %}
         </tbody>
     </table>
-</div>
-
-
-<div class="button">
     <a href="{{ url_for('main_page') }}" class="btn btn-primary">Back</a>
 </div>
+
+
+
 
 {% endblock %}
 
